@@ -1,0 +1,57 @@
+<!--
+  Bold elements are required.
+  Underlined values are the default when the element is not specified.
+  %VAR% expands environment/special variables and registry keys.
+-->
+<launch4jConfig>
+    <headerType>gui</headerType>
+    <outfile>CFM.exe</outfile>
+    <jar>CoffeeFactoryManagement.jar</jar>
+    <dontWrapJar>true</dontWrapJar>
+    <errTitle>Coffee Factory Management</errTitle>
+    <chdir>.</chdir>
+    <priority>normal</priority>
+    <stayAlive>true</stayAlive>
+    <restartOnCrash>true</restartOnCrash>
+    <icon>icon.png</icon>
+    <obj>header object file</obj>
+    <lib>w32api lib</lib>
+    <var>var=text (%VAR%)</var>
+    <classPath>
+        <mainClass>pkgcommon.App</mainClass>
+        <cp>classpath (%VAR%)</cp>
+    </classPath>
+    <singleInstance>
+        <windowTitle>Coffee Factory Management</windowTitle>
+    </singleInstance>
+    <jre>
+        <path>JRE path (%VAR%)</path>
+        <requiresJdk>false</requiresJdk>
+        <requires64Bit>true</requires64Bit>
+        <minVersion>1.17.0</minVersion>
+        <maxVersion>1.20.0</maxVersion>
+        <initialHeapSize>248MB</initialHeapSize>
+        <initialHeapPercent>20%</initialHeapPercent>
+        <maxHeapSize>2048MB</maxHeapSize>
+        <maxHeapPercent>80%</maxHeapPercent>
+        <opt>text (%VAR%)</opt>
+    </jre>
+    <versionInfo>
+        <fileVersion>0.0.1</fileVersion>
+        <productName>Coffee Sip</productName>
+        <companyName>Pronic Tech (KE)</companyName>
+        <internalName>casta</internalName>
+        <originalFilename>casta_coffee.exe</originalFilename>
+        <trademarks>Coffee Sip, Pronic Tech (KE), casta coffee, casta</trademarks>
+        <language>
+            ENGLISH_US
+        </language>
+    </versionInfo>
+    <messages>
+        <startupErr>System failed to start, Contact your system admin for help.</startupErr>
+        <jreNotFoundErr>No JRE found on host system, Contact your system admin for help.</jreNotFoundErr>
+        <jreVersionErr>JRE not of supported version, Contact your system admin for help.</jreVersionErr>
+        <launcherErr>System failed to launch, Contact your system admin for help.</launcherErr>
+        <instanceAlreadyExistsMsg>App already running.</instanceAlreadyExistsMsg>
+    </messages>
+</launch4jConfig>
